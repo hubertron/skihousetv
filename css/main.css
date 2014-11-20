@@ -222,7 +222,7 @@ textarea {
 body {
     background-image: url("/img/fresh_snow.png");
     background-color: #eee;
-    margin: 40px 0 0 40px;
+    margin: 20px 0 0 20px;
     font-weight: bold;
     overflow: hidden;
 
@@ -242,6 +242,10 @@ body {
     margin: 0 10px;
 }
 
+.col1, .col2 {
+    margin-top: -54px;
+}
+
 .col3 {
     min-height: 1040px;
     width: 550px;
@@ -249,19 +253,23 @@ body {
 }
 
 
-.keystone, .breck, .loveland, .vail, .beaver, .steamboat {
+.keystone, .breck, .loveland, .vail, .beaver, .steamboat, .abasin, .winterpark {
     width: 400px;
-    height: 320px;
+    height: 270px;
     display:block;
-    margin-bottom: 20px;
-
 }
 
 
 .webcam_title {
-    font-family: helvetica;
-    font-size: 2em;
-    color: #3B94D9
+    font-family: "arial narrow",helvetica;
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #3B94D9;
+    position: relative;
+    top: 244px;
+    left: 2px;
+    padding-top: 4px;
+    text-shadow: 0.03em 0.03em #fff;
 }
 
 .snow-stake-live img {
@@ -275,7 +283,7 @@ body {
 }
 
 .twitter {
-    width: 460px;
+    width: 480px;
     height: 1000px;
     overflow-y: hidden;
     
