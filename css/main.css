@@ -225,7 +225,7 @@ body {
     margin: 40px 0 0 40px;
     font-weight: bold;
     overflow: hidden;
-    
+
 
 
 }
@@ -239,11 +239,12 @@ body {
     position: relative;
     float: left;
     width: 400px;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 .col3 {
     min-height: 1040px;
+    width: 550px;
   
 }
 
@@ -274,14 +275,16 @@ body {
 }
 
 .twitter {
-    width: 500px;
+    width: 460px;
     height: 1000px;
     overflow-y: hidden;
     
 }
 
 #twitter-widget-0 {
-    width: 400px;
+    width: 460px;
+    margin-left: -50px;
+    padding-left: -50px;
 
 }
 
