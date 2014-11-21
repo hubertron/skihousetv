@@ -10,7 +10,7 @@ var winterpark = {};
 
 
 (function () {
-  $.getJSON('https://jsonp.nodejitsu.com/?url=http%3A%2F%2Fopensnow.com%2Fapi%2Fpublic%2F1.0%2Flocations%2Fdata%3Fapikey%3D!!!!!!!!!%26lids%3D2%2C5%2C6%2C7%2C3%2C1%2C13%2C15%2C16%26type%3Djson&callback=', 
+  $.getJSON('https://jsonp.nodejitsu.com/?url=http%3A%2F%2Fopensnow.com%2Fapi%2Fpublic%2F1.0%2Flocations%2Fdata%3Fapikey%3D!!!!!!!!!!!!%26lids%3D2%2C5%2C6%2C7%2C3%2C1%2C13%2C15%2C16%26type%3Djson&callback=', 
             function(response){
               // Loveland
                 loveland.name = response.results.location1.meta.name;
@@ -102,13 +102,75 @@ var winterpark = {};
                 winterpark.tonighttemp = response.results.location16.forecast.period1.night.temp;
                 winterpark.tomorrowtemp =  response.results.location16.forecast.period2.day.temp;
 
-  
-                console.log(keystone);
-                console.log(winterpark.name)
 
-                 $( ".inner" ).append( winterpark.name + " is currently " + winterpark.temp + "F  with " + winterpark.todaysnow + "IN of snow expected");
+                $( ".inner" ).append("<b>" + loveland.name + "</b><br />Currently " 
+                                      + loveland.temp + " F  with " 
+                                      + loveland.todaysnow + " IN of snow expected<br />"  
+                                      + loveland.tonightsnow + " IN tonight and "
+                                      + loveland.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + loveland.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + abasin.name + "</b><br />Currently " 
+                                      + abasin.temp + " F  with " 
+                                      + abasin.todaysnow + " IN of snow expected<br />"  
+                                      + abasin.tonightsnow + " IN tonight and "
+                                      + abasin.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + abasin.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + keystone.name + "</b><br />Currently " 
+                                      + keystone.temp + " F  with " 
+                                      + keystone.todaysnow + " IN of snow expected<br />"  
+                                      + keystone.tonightsnow + " IN tonight and "
+                                      + keystone.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + keystone.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + breck.name + "</b><br />Currently " 
+                                      + breck.temp + " F  with " 
+                                      + breck.todaysnow + " IN of snow expected<br />"  
+                                      + breck.tonightsnow + " IN tonight and "
+                                      + breck.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + breck.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + beavercreek.name + "</b><br />Currently " 
+                                      + beavercreek.temp + " F  with " 
+                                      + beavercreek.todaysnow + " IN of snow expected<br />"  
+                                      + beavercreek.tonightsnow + " IN tonight and "
+                                      + beavercreek.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + beavercreek.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + copper.name + "</b><br />Currently " 
+                                      + copper.temp + " F  with " 
+                                      + copper.todaysnow + " IN of snow expected<br />"  
+                                      + copper.tonightsnow + " IN tonight and "
+                                      + copper.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + copper.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + steamboat.name + "</b><br />Currently " 
+                                      + steamboat.temp + " F  with " 
+                                      + steamboat.todaysnow + " IN of snow expected<br />"  
+                                      + steamboat.tonightsnow + " IN tonight and "
+                                      + steamboat.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + steamboat.tomorrowtemp + "<br /><br />");
+
+                $( ".inner" ).append("<b>" + vail.name + "</b><br />Currently " 
+                                      + vail.temp + " F  with " 
+                                      + vail.todaysnow + " IN of snow expected<br />"  
+                                      + vail.tonightsnow + " IN tonight and "
+                                      + vail.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + vail.tomorrowtemp + "<br /><br />");
+
+
+                $( ".inner" ).append("<b>" + winterpark.name + "</b><br />Currently " 
+                                      + winterpark.temp + " F  with " 
+                                      + winterpark.todaysnow + " IN of snow expected<br />"  
+                                      + winterpark.tonightsnow + " IN tonight and "
+                                      + winterpark.tomorrowsnow + " IN expected tomorrow and a high of "
+                                      + winterpark.tomorrowtemp);
+
+                console.log(parseInt(winterpark.temp) + parseInt(vail.temp));
 
             });
+
 
  
 })()

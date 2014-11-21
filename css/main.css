@@ -230,6 +230,10 @@ body {
 
 }
 
+a {
+    color: #3B94D9;
+}
+
 .container {
     width: 1920px;
     height: 1080px;
@@ -281,6 +285,23 @@ body {
     font-size: .8em;
     line-height: .3em;
 }
+
+
+
+.inner {
+    font-size: 1em;
+    line-height: 1.2em;
+    padding-top: 20px;
+    padding-left: 4px;
+}
+
+
+.inner b {
+    font-size: 1.2em;
+    color: #3B94D9;
+    line-height: .9em;
+}
+
 
 .twitter {
     width: 480px;
