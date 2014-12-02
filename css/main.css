@@ -225,8 +225,14 @@ body {
     margin: 20px 0 0 20px;
     font-weight: bold;
     overflow: hidden;
+}
 
-
+h2 {
+    display: none;
+    font-family: helvetica;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #555;
 
 }
 
@@ -317,91 +323,78 @@ a {
 
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
+@media only screen and (max-width : 640px) {
+    .container {
+        width: 320px;
+        height: auto;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
+    .body {
+        margin: 0 0 0 0;
+        overflow: initial;
+
+    }
+    .col1, .col2, .col3, .twitter {
+        width: 360px;
+        margin: -14px -14px;
+
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+    .webcam-info-text {
+        line-height: 1em;
+        margin-top: -10px;
+    }
+    
+    .twitter {
+        width: 360px;
+        height: auto;
+        overflow-y: initial;
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    #twitter-widget-0 {
+        width: 360px;
+        margin-left: -55px;
+        padding-left: -55px;
+        padding-top: -20px;
+        }
+
+    .keystone, .breck, .loveland, .vail, .beaver, .steamboat, .abasin, .winterpark {
+        width: 360px;
+        height: 280px;
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+    .snow-stake-live img {
+        width: 360px;
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
     }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+    .col3 {
+        display: none;
     }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
+    .winterpark { 
+        padding-bottom: 60px;
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
+    .keystone {
+        margin-top: -60px;
     }
 
-    img {
-        max-width: 100% !important;
+    .abasin {
+        padding-bottom: 30px;
     }
 
-    @page {
-        margin: 0.5cm;
+    h2 {
+        display: inline;
     }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
+    .webcam_title {
+        color: #fff;
+        font-size: 1.3em;
+        top: 240px;
+        text-shadow: 0.1em 0.1em #000;
     }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
     }
-}
